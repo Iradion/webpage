@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">
+        <span>Ingresa tu nombre</span>
+        <input type="name" name="name" id="name" required />
+      </label>
+      <label for="email">
+        <span>Ingresa tu correo electrónico</span>
+        <input type="email" name="email" id="email" required />
+      </label>
+      <!-- <label for="country">
+        <span>Pais de nacimiento</span>
+        <input type="text" name="country" id="country" required/>
+      </label> -->
+      <span>Pais de origen</span>
+      <input list="cursos" />
+      <datalist id="cursos">
+        <option value="México"></option>
+        <option value="USA"></option>
+        <option value="Canada"></option>
+      </datalist>
+      <label for="cp">
+        <span>Codigo postal</span>
+        <input type="text" name="cp" id="cp" required />
+      </label>
+      <label for="date">
+        <span>Ingresa tu fecha de nacimiento</span>
+        <input type="date" id="date" required />
+      </label>
+      <label for="time">
+        <span>¿A qué hora podemos contactarte?</span>
+        <input type="time" id="time" required />
+      </label>
+      <label for="submit">
+        <input type="submit" id= "submit" value="Registrarse" />
+      </label>
+    </form>
+  </body>
+</html>
